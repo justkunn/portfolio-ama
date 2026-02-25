@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center mb-2">
+        <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center mb-16">
             <img src="./assets/profile-img.png" alt="" className="rounded-full w-32" />
             <h3 className="flex items-end gap-1 text-xl md:text-2xl font-Ovo">
                 Welcome to my portofolio!
