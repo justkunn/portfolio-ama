@@ -32,7 +32,7 @@ export default function Work() {
                                         <h3 className="text-lg font-semibold text-gray-600 dark:text-white">{item.name}</h3>
                                         <p className="mt-2 text-sm text-gray-600 dark:text-white">{item.description}</p>
                                         {item.name === "Penugasan 3" && (
-                                            <img src="./assets/083_INFOGRAFIS.png" alt="" className="mt-6 w-full rounded-lg" />
+                                            <img src="./assets/083_INFOGRAFIS.webp" alt="" className="mt-6 w-full rounded-lg" loading="lazy"/>
                                         )}
                                     </div>
                                     {item.name === "Penugasan 2" && (
@@ -41,8 +41,8 @@ export default function Work() {
                                             className="ml-auto inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
                                         >
                                             Open
-                                            <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" loading="lazy"/>
-                                            <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" loading="lazy"/>
+                                            <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden"/>
+                                            <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block"/>
                                         </a>
                                     )}
                                 </div>
