@@ -1,29 +1,42 @@
 import { motion } from "framer-motion";
+import { CiGlobe } from "react-icons/ci";
+import { FaMobileAlt, FaPaintBrush, FaPalette } from "react-icons/fa";
+import { FcBusinesswoman, FcConferenceCall, FcEditImage, FcEnteringHeavenAlive, FcSelfServiceKiosk, FcSurvey } from "react-icons/fc";
 
 export default function Services() {
     const services = [
         {
             name: 'Web development',
-            icon: './assets/web-icon.png',
-            description: 'Web development is the process of building, programming...',
+            Icon: FcEnteringHeavenAlive,
+            description: 'Build responsive and functional websites while continuing to learn programming.',
             link: '#',
-        },
-        {
-            name: 'Mobile app',
-            icon: './assets/mobile-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
-        },
-        {
+        },{
             name: 'UI/ UX design',
-            icon: './assets/ui-icon.png',
-            description: 'Web development is the process of building, programming...',
+            Icon: FcSelfServiceKiosk,
+            description: 'Designing simple, user-friendly interfaces by applying basic design principles and focusing on clear user experience.',
+            link: '#',
+        },{
+            name: 'Graphics design',
+            Icon: FcEditImage,
+            description: 'Creating clean and visually appealing digital designs for presentations, social media, and organizational needs.',
             link: '#',
         },
         {
-            name: 'Graphics design',
-            icon: './assets/graphics-icon.png',
-            description: 'Web development is the process of building, programming...',
+            name: 'Leadership Development',
+            Icon: FcBusinesswoman,
+            description: 'Interested in developing leadership skills through active participation in student organizations.',
+            link: '#',
+        },
+        {
+            name: 'Event & Project Management ',
+            Icon: FcSurvey,
+            description: 'Enthusiastic about being involved in organizing events and managing collaborative projects.',
+            link: '#',
+        },
+        {
+            name: 'Team Collaboration',
+            Icon: FcConferenceCall,
+            description: 'Interested in working with diverse teams to build communication and teamwork experience.',
             link: '#',
         }
     ];
@@ -39,7 +52,7 @@ export default function Services() {
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
                     <div key={service.name} className="border border-gray-300 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
-                        <img src={service.icon} alt="" className="w-10" />
+                        <service.Icon className="h-10 w-10 text-gray-700 dark:text-white" aria-hidden="true" />
                         <h3 className="text-lg my-4 text-gray-700 dark:text-white">{service.name}</h3>
                         <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{service.description}</p>
                     </div>

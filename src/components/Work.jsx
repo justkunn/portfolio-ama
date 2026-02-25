@@ -3,17 +3,17 @@ export default function Work() {
     {
       name: "Penugasan 2",
       description: "Web Design",
-      link: "https://docs.google.com/document/d/10BotmWoJu6yOlwrKC_ReMovBZjl9ZHsb/edit?usp=sharing&ouid=106344982225578498713&rtpof=true&sd=true",
+      link: "./assets/TOR_LKMMTH_083.docx.pdf",
     },
     {
       name: "Penugasan 3",
       description: "Inforgrafis informatif",
-      link: "",
+      link: "https://drive.google.com/file/d/1gF2O_Vprz8f3kQSP8zNAN6KrXng08AuC/view?usp=sharing",
     },
     {
       name: "Penugasan 4",
       description: "Web Design",
-      link: "",
+      link: " https://drive.google.com/file/d/1_hgvJQwP8t3i-wW9MtKMdDu0QgkF-spK/view?usp=sharing",
     },
   ];
   return (
@@ -28,10 +28,32 @@ export default function Work() {
                 className="border border-gray-300 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-600 dark:text-white">
-                      {item.name}
-                    </h3>
+                  <div className="flex-1">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <h3 className="text-lg font-semibold text-gray-600 dark:text-white">
+                        {item.name}
+                      </h3>
+                      {["Penugasan 2", "Penugasan 3", "Penugasan 4"].includes(
+                        item.name
+                      ) && (
+                        <a
+                          href={item.link || "#"}
+                          className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover sm:w-auto dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
+                        >
+                          Open
+                          <img
+                            src="./assets/arrow-icon.png"
+                            alt=""
+                            className="w-3 dark:hidden"
+                          />
+                          <img
+                            src="./assets/arrow-icon-dark.png"
+                            alt=""
+                            className="w-3 hidden dark:block"
+                          />
+                        </a>
+                      )}
+                    </div>
                     <p className="mt-2 text-sm text-gray-600 dark:text-white">
                       {item.description}
                     </p>
@@ -58,24 +80,7 @@ export default function Work() {
                       </video>
                     )}
                   </div>
-                  {item.name === "Penugasan 2" && (
-                    <a
-                      href={item.link || "#"}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover sm:ml-auto sm:w-auto dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
-                    >
-                      Open
-                      <img
-                        src="./assets/arrow-icon.png"
-                        alt=""
-                        className="w-3 dark:hidden"
-                      />
-                      <img
-                        src="./assets/arrow-icon-dark.png"
-                        alt=""
-                        className="w-3 hidden dark:block"
-                      />
-                    </a>
-                  )}
+                  
                 </div>
               </div>
             ))}

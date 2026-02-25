@@ -3,38 +3,38 @@ export default function Portofolio() {
     {
       title: "OSIS",
       description:
-        "Menjabat sebagai ketua seksi kepribadian unggul, wawasan kebangsaan, bela negara",
+        "ketua seksi kepribadian unggul, wawasan kebangsaan, bela negara",
       image: "./assets/logo-osis-smp.png",
-      link: "",
+      year: "2019",
     },
     {
       title: "Pramuka (penggalang)",
       description: "Kerani (Sekertaris)",
       image: "./assets/logo-pramuka.jpg",
-      link: "",
+      year: "2020",
     },
     {
       title: "OSIS",
       description: "Wakil sekertaris",
       image: "./assets/logo-osis-smk.jpg",
-      link: "",
+      year: "2021",
     },
     {
       title: "Pramuka (Penegak)",
       description: "Anggota",
       image: "./assets/logo-pramuka.jpg",
-      link: "",
+      year: "2021",
     },
     {
       title: "OSIS",
       description: "Sekertaris",
       image: "./assets/logo-osis-smk.jpg",
-      link: "",
+      year: "2022",
     },{
       title: "Karang Taruna",
       description: "Anggota",
       image: "./assets/logo-karang-taruna.png",
-      link: "",
+      year: "2025",
     }
   ];
 
@@ -62,22 +62,9 @@ export default function Portofolio() {
               <p className="mt-2 text-sm text-gray-600 dark:text-white">
                 {item.description}
               </p>
-              <a
-                href={item.link}
-                className="inline-flex items-center justify-center gap-2 mt-4 text-sm text-gray-700 dark:text-white"
-              >
-                View details
-                <img
-                  src="./assets/arrow-icon.png"
-                  alt=""
-                  className="w-3 dark:hidden"
-                />
-                <img
-                  src="./assets/arrow-icon-dark.png"
-                  alt=""
-                  className="w-3 hidden dark:block"
-                />
-              </a>
+              <p className="mt-4 text-sm text-gray-700 dark:text-white">
+                {item.year}
+              </p>
             </div>
           </div>
         ))}
