@@ -41,8 +41,8 @@ export default function Work() {
                                             className="ml-auto inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
                                         >
                                             Open
-                                            <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
-                                            <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
+                                            <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" loading="lazy"/>
+                                            <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" loading="lazy"/>
                                         </a>
                                     )}
                                 </div>
