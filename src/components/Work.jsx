@@ -37,7 +37,7 @@ export default function Work() {
                     </p>
                     {item.name === "Penugasan 3" && (
                       <img
-                        src="./assets/083_INFOGRAFIS.webp"
+                        src="./assets/083_SUARA_MUDA.webp"
                         alt=""
                         className="mt-6 w-full rounded-lg"
                         loading="lazy"
@@ -53,7 +53,7 @@ export default function Work() {
                         loop
                         playsInline
                       >
-                        <source src="/assets/Prabowo.mp4" type="video/mp4" />
+                        <source src="/assets/Video_Himakom_1.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                     )}
@@ -61,7 +61,7 @@ export default function Work() {
                   {item.name === "Penugasan 2" && (
                     <a
                       href={item.link || "#"}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover sm:ml-auto sm:w-auto dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 px-5 py-2 text-sm text-gray-700 hover:bg-lightHover sm:ml-auto sm:w-auto dark:border-white/30 dark:text-white dark:hover:bg-darkHover"
                     >
                       Open
                       <img
