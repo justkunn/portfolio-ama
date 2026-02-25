@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
       <LenisScroll />
       <div className="min-h-screen max-w-6xl mx-auto px-6 py-20 space-y-16">
-        <section id="home">
+        <section id="home" className="pt-6">
           <Header />
         </section>
         <section id="about">

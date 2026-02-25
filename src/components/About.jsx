@@ -36,10 +36,10 @@ export default function About() {
       transition={{ duration: 0.4 }}>
 
         <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-            <h2 className="text-center text-5xl font-Ovo">About me</h2>
+            <h4 className="text-center mb-1 text-lg font-Ovo">Introduction</h4>
+            <h2 className="text-center text-5xl font-Ovo mb-1">About me</h2>
 
-            <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div className="flex w-full flex-col lg:flex-row items-center gap-8 my-6">
                 <div className="max-w-max mx-auto relative">
                     <img src='./assets/maw-image.png' alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
 
@@ -49,7 +49,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo">I am an Informatics student. I enjoy learning new technologies and building projects that help me improve my problem-solving skills. Currently, I am focusing on strengthening my fundamentals in programming and system design.</p>
+                    <p className="mb-6 max-w-2xl font-Ovo">I am an Informatics student. I enjoy learning new technologies and building projects that help me improve my problem-solving skills. Currently, I am focusing on strengthening my fundamentals in programming and system design.</p>
 
                     <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         {data.map((data) => (

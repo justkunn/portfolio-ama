@@ -1,12 +1,12 @@
 export default function Header() {
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4">
+        <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center mb-2">
             <img src="./assets/profile-img.png" alt="" className="rounded-full w-32" />
-            <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+            <h3 className="flex items-end gap-1 text-xl md:text-2xl font-Ovo">
                 Welcome to my portofolio!
-                <img src="./assets/hand-icon.png" alt="" className="w-6 mb-1" />
+                <img src="./assets/hand-icon.png" alt="" className="w-6 mb-0" />
             </h3>
-            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Tech entusiast & Informatics student</h1>
+            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo m-4">Tech entusiast & Informatics student</h1>
             <p className="max-w-2xl mx-auto font-Ovo">I love learning how technology works and building simple yet meaningful digital projects.</p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
